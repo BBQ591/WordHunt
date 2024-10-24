@@ -1,6 +1,7 @@
 package assignment;
 
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -21,12 +22,11 @@ public class GameDictionary implements BoggleDictionary{
         try {
 //            System.out.println("hello");
             gd.loadDictionary("./words.txt");
-            int index = 0;
+            HashSet<String> temp = new HashSet<>();
             while (gd.iterator().hasNext()) {
-                index += 1;
-                System.out.println(gd.iterator().next());
+                temp.add(gd.iterator().next());
             }
-            System.out.println(index);
+            System.out.println(temp.size());
 
 
         }

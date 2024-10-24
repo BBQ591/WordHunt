@@ -27,7 +27,7 @@ public class stringIterator<String> implements java.util.Iterator<String> {
     }
 
     public boolean hasNext() {
-        if (word.size() == 1) {
+        if (word.get(word.size()-1).neighbors.size() > 0) {
             return true;
         }
         int index = word.size()-2;
