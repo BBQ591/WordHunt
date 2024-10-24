@@ -3,13 +3,11 @@ package assignment;
 import java.util.*;
 
 public class stringIterator<String> implements java.util.Iterator<String> {
-    public trie bigTrie;
     public Stack<trieNode> word;
     stringIterator(trie words) {
-        this.bigTrie = words;
         word = new Stack<>();
         //setting up first word
-        word.add(bigTrie.root);
+        word.add(words.root);
 //        word.add(bigTrie.root.neighbors.get('a'));
 //        word.add(bigTrie.root.neighbors.get('a'));
     }
