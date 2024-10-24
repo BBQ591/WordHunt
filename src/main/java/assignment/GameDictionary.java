@@ -21,56 +21,12 @@ public class GameDictionary implements BoggleDictionary{
         try {
 //            System.out.println("hello");
             gd.loadDictionary("./words.txt");
-            System.out.println(gd.contains("aaaa"));
-            System.out.println(gd.iterator().hasNext());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//
-//
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//
-//
-//
-//            System.out.println(gd.iterator().hasNext());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//
-//
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
-//            System.out.println(gd.iterator().next());
+            int index = 0;
+            while (gd.iterator().hasNext()) {
+                index += 1;
+                System.out.println(gd.iterator().next());
+            }
+            System.out.println(index);
 
 
         }
